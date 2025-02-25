@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 # ฟังก์ชันคำนวณค่างวดผ่อนบ้าน
 def calculate_monthly_payment(house_price, mrr, interest_rate, years):
-    annual_interest_rate = mrr - interest_rate  # คำนวณอัตราดอกเบี้ยที่แท้จริง
+    annual_interest_rate = interest_rate + mrr  # คำนวณอัตราดอกเบี้ยที่แท้จริง
     months = years * 12  # จำนวนเดือนทั้งหมด
     monthly_interest_rate = (annual_interest_rate / 100) / 12  # อัตราดอกเบี้ยรายเดือน
     
